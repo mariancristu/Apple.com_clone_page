@@ -1,0 +1,11 @@
+.top-section {
+  background: url(../images/your_verse_hero_2x.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  min-height: 500px;
+  width: 100%;
+  background-size: 1450px auto;
+  background-position-y: -700px;
+  background-position-x: center;
+  display: flex;
+}
