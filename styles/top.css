@@ -11,11 +11,14 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  align-content: center;
 }
 
 .navbar {
   width: 900px;
   height: 40px;
+  flex: 0 1 auto;
+  margin: 50px 0;
 }
 
 .navbar > ul {
@@ -107,4 +110,33 @@
   height: 20px;
   position: relative;
   top: 3px;
+}
+
+.top-section-text {
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+.top-section-text > :not(:first-child) {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.top-section-text :first-child {
+  display: block;
+}
+
+.top-section-text :last-child {
+  position: relative;
+}
+
+.top-section-text :last-child > img {
+  position: absolute;
+  top: 0;
+  clip-path: polygon(0 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+.top-section-text :last-child > img:hover {
+  top: -32px;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
 }
