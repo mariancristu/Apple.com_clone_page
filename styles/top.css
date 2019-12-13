@@ -8,4 +8,103 @@
   background-position-y: -700px;
   background-position-x: center;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 900px;
+  height: 40px;
+}
+
+.navbar > ul {
+  display: flex;
+  padding: 0;
+  height: 100%;
+  border: 1px solid rgba(96, 96, 96, 0.8);
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px 0px rgba(39, 39, 39, 0.5);
+}
+
+.navbar li {
+  list-style-type: none;
+  flex: 1;
+  border-right: 1px solid #909090;
+  background: rgb(97, 96, 96);
+  background: linear-gradient(
+    rgba(85, 85, 85, 0.9) 0%,
+    rgba(140, 140, 140, 0.9) 50%,
+    rgba(159, 159, 159, 0.9) 50%,
+    rgba(149, 143, 143, 0.9) 99%
+  );
+
+  background-origin: border-box;
+  background-clip: border-box;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 1ms;
+  transition-duration: 1s;
+}
+
+.navbar li:not(:last-child):hover {
+  background: linear-gradient(
+      rgba(85, 85, 85, 0.9) 0%,
+      rgba(140, 140, 140, 0.9) 50%,
+      rgba(159, 159, 159, 0.9) 50%,
+      rgba(149, 143, 143, 0.9) 99%
+    ),
+    rgb(0, 0, 0);
+}
+
+.navbar ul > :nth-child(1) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.navbar ul > :nth-child(9) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  flex: 1.5, 1, auto;
+}
+
+#search {
+  width: 100%;
+  height: 24px;
+  font-size: 12px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  border: 1px solid rgba(126, 126, 126, 0.5);
+  background: url(../icons/search_icon.png) 5px 5px no-repeat;
+  background-size: 15px 15px;
+  box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.4);
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+}
+
+#search:focus {
+  width: 200px;
+}
+
+.navbar li > a {
+  display: block;
+  text-align: center;
+  line-height: 39px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 0px 0px 1px #2c2c2c;
+
+  text-decoration: none;
+  height: 100%;
+}
+
+.navbar img {
+  width: 18px;
+  height: 20px;
+  position: relative;
+  top: 3px;
 }
