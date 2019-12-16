@@ -1,0 +1,32 @@
+.promotions {
+  display: flex;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.promotions > a {
+  flex: 1;
+  padding: 2px 2px 5px 2px;
+}
+
+.promotions :nth-child(1) {
+  background: url(/images/promo_iphone5s.jpg) 50% 50% no-repeat;
+  background-clip: content-box;
+  padding-left: 0;
+}
+
+.promotions :nth-child(2) {
+  background: url(/images/promo_iphone5c.jpg) 50% 50% no-repeat;
+  background-clip: content-box;
+}
+
+.promotions :nth-child(3) {
+  background: url(/images/promo_30_years.jpg) 50% 50% no-repeat;
+  background-clip: content-box;
+}
+
+.promotions :nth-child(4) {
+  background: url(/images/promo_supplier_responsibility.jpg) 50% 50% no-repeat;
+  background-clip: content-box;
+  padding-right: 0;
+}
