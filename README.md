@@ -14,7 +14,7 @@ Project: Positioning and Floating Elements.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/mariancristu/Apple.com_clone_page/test/index.html)
+[Live Demo Link](https://mariancristu.github.io/Apple.com_clone_page/)
 
 ## Getting Started
 
