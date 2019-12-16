@@ -1,3 +1,43 @@
-footer {
+.footer {
   display: flex;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.footer > :first-child {
+  white-space: nowrap;
+  flex: 0.8;
+}
+
+.footer > :first-child > span {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: rgb(112, 112, 112);
+}
+
+.footer a {
+  color: rgb(71, 181, 255);
+}
+
+.footer > :last-child {
+  font-size: 11px;
+  padding-left: 20px;
+  white-space: nowrap;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer > :last-child > a {
+  height: 15px;
+}
+
+.footer > :last-child > img {
+  width: 15px;
+  height: auto;
+  display: inline-block;
 }
