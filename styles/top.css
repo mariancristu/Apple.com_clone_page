@@ -28,7 +28,7 @@
   height: 100%;
   border: 1px solid rgba(96, 96, 96, 0.8);
   border-radius: 6px;
-  box-shadow: 0px 0px 3px 0px rgba(39, 39, 39, 0.5);
+  box-shadow: 0 0 3px 0 rgba(39, 39, 39, 0.5);
 }
 
 .navbar li {
@@ -36,13 +36,13 @@
   flex: 1;
   border-right: 1px solid #909090;
   background: rgb(97, 96, 96);
-  background: linear-gradient(
-    rgba(85, 85, 85, 0.9) 0%,
-    rgba(140, 140, 140, 0.9) 50%,
-    rgba(159, 159, 159, 0.9) 50%,
-    rgba(149, 143, 143, 0.9) 99%
-  );
-
+  background:
+    linear-gradient(
+      rgba(85, 85, 85, 0.9) 0%,
+      rgba(140, 140, 140, 0.9) 50%,
+      rgba(159, 159, 159, 0.9) 50%,
+      rgba(149, 143, 143, 0.9) 99%
+    );
   background-origin: border-box;
   background-clip: border-box;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -51,13 +51,27 @@
 }
 
 .navbar li:not(:last-child):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(85, 85, 85, 0.9) 0%,
       rgba(140, 140, 140, 0.9) 50%,
       rgba(159, 159, 159, 0.9) 50%,
       rgba(149, 143, 143, 0.9) 99%
     ),
     rgb(0, 0, 0);
+}
+
+.top-section-text > :not(:first-child) {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.top-section-text :first-child {
+  display: block;
+}
+
+.top-section-text :last-child {
+  position: relative;
 }
 
 .navbar ul > :nth-child(1) {
@@ -102,8 +116,7 @@
   font-size: 14px;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  text-shadow: 0px 0px 1px #2c2c2c;
-
+  text-shadow: 0 0 1px #2c2c2c;
   text-decoration: none;
   height: 100%;
 }
@@ -118,19 +131,6 @@
 .top-section-text {
   text-align: center;
   flex: 1 1 auto;
-}
-
-.top-section-text > :not(:first-child) {
-  display: block;
-  margin-bottom: 40px;
-}
-
-.top-section-text :first-child {
-  display: block;
-}
-
-.top-section-text :last-child {
-  position: relative;
 }
 
 .top-section-text :last-child > img {
